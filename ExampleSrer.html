@@ -2,23 +2,32 @@
 <head>
     <title>Примеры стереоизображений </title>
     <style type="text/css">
-        .popup {width: 600px; height: 500px; cursor:pointer;}
-        .popup:focus {width: 790px; height: 650px;}
-        .img{
+        .popup {width: 600px; height: 500px; cursor:pointer;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        z-index: 100;
+        padding: 5px;
+        background: white;
+        box-shadow: 0 3px 8px #ccc;
+        margin:1% 1% 1% 4%;
+        }
+        .popup:focus {-webkit-transform:  scale(1.25);}
+        .img1{
         text-align:center;
         }
+
     </style>
 
 </head>
 <body style="margin:1% 3%">
 <blockquote>
     <h2> Просто нажимайте на картинки что бы их увеличить <h2>
-    <div class="img">
-    <img class="popup" src="Stereoimages\StereoKar1.jpg" width=600 height=500 tabindex="1"> <br />
-    <img class="popup" src="Stereoimages\StereoKar2.jpg" width=600 height=500 tabindex="1">  <br />
-    <img class="popup" src="Stereoimages\StereoKar3.jpg" tabindex="1" height=600 width=500/>
+
+    <img class="popup" src="Stereoimages\StereoKar3.jpg" tabindex="1" height=600 width=500 />
     <img class="popup" src="Stereoimages\StereoKar2.jpg" tabindex="1" />
-    </div>
+    <img class="popup" src="Stereoimages\StereoKar1.jpg" width=600 height=500 tabindex="1">
 </blockquote>
 </body>
 </html>
